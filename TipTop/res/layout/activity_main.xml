@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/totalAmount"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/pc20Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pc15Btn"
+        android:layout_alignTop="@+id/pc15Btn"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/pc15Btn"
+        android:onClick="onPercentClick"
+        android:text="20%" />
+
+    <EditText
+        android:id="@+id/tipDisplayTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/pc20Btn"
+        android:layout_marginBottom="113dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/pc10Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="67dp"
+        android:onClick="onPercentClick"
+        android:text="10%" />
+
+    <Button
+        android:id="@+id/pc15Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/pc10Btn"
+        android:onClick="onPercentClick"
+        android:text="15%" />
+
+    <EditText
+        android:id="@+id/totalAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pc10Btn"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>
